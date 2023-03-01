@@ -81,3 +81,12 @@ img {
   left: 10%;
   bottom: 20%;
 }
+
+.global-footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
