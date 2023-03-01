@@ -31,6 +31,7 @@ img {
   position: sticky;
   top: 0;
   height: 100vh;
+  overflow: hidden;
 }
 
 .graphic-item {
@@ -44,6 +45,7 @@ img {
   height: 100%;
   opacity: 0;
   transition: 0.5s;
+  will-change: opacity;
 }
 
 .visible {
@@ -64,4 +66,27 @@ img {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+
+.bird {
+  position: absolute;
+  left: 10%;
+  bottom: 65%;
+  width: 8%;
+  transform: translateX(-250%);
+  transition: 2s 0.5s linear;
+}
+
+[data-index="5"] .bird {
+  left: 10%;
+  bottom: 20%;
+}
+
+.global-footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
